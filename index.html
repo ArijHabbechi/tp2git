@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Git et GitHub - Connaissances avancées dans un contexte DevOps">
+    <title>Git et GitHub Dans un Contexte DevOps</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f0f4f8; 
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        p {
+            line-height: 1.6;
+            color: #34495e;
+        }
+        ul, ol {
+            margin: 20px 0;
+        }
+        li {
+            margin-bottom: 10px;
+            transition: background-color 0.3s ease; 
+        }
+        li:hover {
+            background-color: #dff9fb;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .pre-requis {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 4px solid #3498db;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            font-family: Consolas, monospace;
+            font-size: 14px;
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Git et GitHub Dans un Contexte DevOps</h1>
+    <h2>Partie 2 – Connaissances Avancées</h2>
+
+    <div class="section">
+        <h3>1. Introduction :</h3>
+        <p>Ce TP avancé vise à approfondir vos connaissances en Git et GitHub, en mettant l'accent sur les aspects plus avancés utilisés généralement par les ingénieurs DevOps. Vous allez vous familiariser avec des fonctionnalités avancées telles que :</p>
+        <ul>
+            <li>Les branches</li>
+            <li>Les fusions</li>
+            <li>Les conflits de fusion</li>
+            <li>Les flux de travail de développement</li>
+        </ul>
+        <p>Le TP est conçu pour durer au moins 3 heures.</p>
+    </div>
+
+    <div class="section pre-requis">
+        <h3>Prérequis :</h3>
+        <ul>
+            <li>Un environnement de développement (IDE)</li>
+            <li>Git installé sur votre machine</li>
+            <li>Un compte GitHub</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>2. Exercice 1 : Création et gestion des branches (30 minutes)</h3>
+        <ol>
+            <li>Clonez un repository GitHub vide sur votre machine en utilisant la commande <code>git clone &lt;repository_url&gt;</code>.</li>
+            <li>Créez une nouvelle branche appelée <code>feature/ma-nouvelle-fonctionnalite</code> avec la commande <code>git branch feature/ma-nouvelle-fonctionnalite</code>.</li>
+            <li>Passez sur la nouvelle branche en utilisant la commande <code>git checkout feature/ma-nouvelle-fonctionnalite</code>.</li>
+            <li>Effectuez quelques modifications et créez un commit sur cette branche.</li>
+            <li>Passez à la branche principale (généralement <code>master</code> ou <code>main</code>) avec la commande <code>git checkout main</code>.</li>
+            <li>Fusionnez la branche de fonctionnalité dans la branche principale avec la commande <code>git merge feature/ma-nouvelle-fonctionnalite</code>.</li>
+            <li>Supprimez la branche de fonctionnalité avec la commande <code>git branch -d feature/ma-nouvelle-fonctionnalite</code>.</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h3>3. Exercice 2 : Gestion des conflits de fusion (60 minutes)</h3>
+        <ol>
+            <li>Créez une autre branche appelée <code>hotfix/correction-bug</code> à partir de la branche principale.</li>
+            <li>Effectuez des modifications dans la même partie de code sur la branche <code>hotfix/correction-bug</code> et sur une autre branche.</li>
+            <li>Essayez de fusionner la branche <code>hotfix/correction-bug</code> dans la branche principale en utilisant <code>git merge hotfix/correction-bug</code>.</li>
+            <li>Identifiez et résolvez les conflits de fusion en modifiant manuellement les fichiers concernés.</li>
+            <li>Effectuez un commit pour résoudre les conflits et finaliser la fusion.</li>
+            <li>Poussez les modifications vers le repository distant.</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h3>4. Exercice 3 : Flux de travail de développement (60 minutes)</h3>
+        <ol>
+            <li>Identifiez un workflow de développement approprié pour votre projet (par exemple, le flux de travail GitFlow).</li>
+            <li>Créez différentes branches de fonctionnalités ou de développement pour simuler différentes tâches.</li>
+            <li>Effectuez des modifications et des commits sur chaque branche.</li>
+            <li>Fusionnez les branches de fonctionnalités dans la branche de développement principale.</li>
+            <li>Poussez les modifications vers le repository distant.</li>
+            <li>Optionnel : Effectuez une simulation de déploiement en utilisant une branche de déploiement ou une étiquette de version.</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h3>5. Conclusion :</h3>
+        <p>Ce TP avancé vous a permis de vous familiariser avec des fonctionnalités plus avancées de Git et GitHub, nécessaires dans les workflows DevOps. Vous avez appris à créer et gérer des branches, à résoudre les conflits de fusion, et à mettre en place un flux de travail de développement efficace. Continuez à pratiquer régulièrement pour renforcer vos compétences en matière de gestion de versions et de collaboration dans un environnement DevOps.</p>
+    </div>
+
+</body>
+</html>
